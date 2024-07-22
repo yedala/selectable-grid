@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 34px);
+  grid-template-rows: repeat(var(--rows), 34px);
+  user-select: none;
+  gap: 1px;
+}
+.cell {
+  background-color: antiquewhite;
+  border: 1px solid rgb(179, 173, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected {
+  background-color: lightblue;
+}
